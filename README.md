@@ -156,20 +156,21 @@ Iterative policy evaluation was implemented successfully using the Gymnasium Fro
 ## Inference
 
 ```text
+Inference
+
 --> For γ = 0.82, the value function converged after 37 iterations.
 
---> In the FrozenLake environment, the default setting is is_slippery = True, making the environment stochastic. Therefore, the agent may not always move in the intended direction.
+--> The FrozenLake environment is slippery by default, so the agent may not always move in the chosen direction.
 
---> A fixed random policy was used, where each action was selected with equal probability (0.25), resulting in relatively low state values because the agent does not always choose the optimal action.
+--> A random policy was used, where all four actions have an equal chance of being selected.
 
---> States closer to the goal have higher state values, as they have a greater probability of eventually reaching the goal and receiving the reward.
+--> States closer to the goal have higher values because they are more likely to reach the goal and receive a reward.
 
---> Hole states and terminal states have a value of 0 because the episode terminates immediately without any future reward.
+--> Hole states and terminal states have a value of 0 because the episode ends immediately.
 
---> The discount factor (γ = 0.82) gives moderate importance to future rewards. As a result, the estimated state values are lower than those obtained with larger discount factors such as γ = 0.90 or γ = 0.99.
+--> The discount factor (γ = 0.82) considers both current and future rewards while giving slightly more importance to immediate rewards.
 
---> The iterative policy evaluation algorithm successfully estimated the state-value function using the Bellman expectation equation until the value function converged.
-
+--> The iterative policy evaluation algorithm successfully calculated the state-value function using the Bellman expectation equation.
 
 ```
 
