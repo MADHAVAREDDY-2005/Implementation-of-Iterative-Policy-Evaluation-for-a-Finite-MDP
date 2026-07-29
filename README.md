@@ -169,9 +169,6 @@ Inference
 --> Hole states and terminal states have a value of 0 because the episode ends immediately.
 
 --> The discount factor (γ = 0.82) considers both current and future rewards while giving slightly more importance to immediate rewards.
-
---> The iterative policy evaluation algorithm successfully calculated the state-value function using the Bellman expectation equation.
-
 ```
 
 
